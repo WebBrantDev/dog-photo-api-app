@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dog Pics App</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Dog Pic App</h1>
+    </header>
+    <main>
+      <div class="container">
+        <form id="dog-form">
+          <div>
+            <label for="amount-of-dogs"
+              >How many dog pics would you like?</label
+            >
+          </div>
+          <div>
+            <input
+              type="number"
+              max="50"
+              min="1"
+              id="amount-of-dogs"
+              name="dog-amount"
+              value="3"
+            />
+          </div>
+          <div>
+            <input class="btn" type="submit" value="Get Pics" />
+          </div>
+        </form>
+        <section class="result hidden"></section>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
