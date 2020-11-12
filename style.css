@@ -59,10 +59,6 @@ input {
 @media all and (min-width: 600px) {
   .container {
     width: 60%;
-    /* flex-direction: row; */
-  }
-
-  .result {
-    flex-direction: column;
+    flex-direction: row;
   }
 }

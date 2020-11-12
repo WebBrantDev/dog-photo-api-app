@@ -2,7 +2,7 @@ function retrieveDogPics() {
   fetch(`https://dog.ceo/api/breeds/image/random/${getUserAmount()}`)
     .then((response) => response.json())
     .then((responseJson) => displayResults(responseJson))
-    .catch((error) => alert("nope"));
+    .catch((error) => alert("An error occured. Please try again."));
 }
 
 function displayResults(responseJson) {
